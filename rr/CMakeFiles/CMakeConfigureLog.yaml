@@ -1,0 +1,1445 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineSystem.cmake:233 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Darwin - 23.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'System' not found
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/3.28.3/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library 'c++' not found
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/3.28.3/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_9affd/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_9affd.dir/build.make CMakeFiles/cmTC_9affd.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB'
+        Building C object CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCCompilerABI.c
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking C executable cmTC_9affd
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9affd.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -o cmTC_9affd 
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o cmTC_9affd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 05:27:37 Dec  7 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        Framework search paths:
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_9affd/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_9affd.dir/build.make CMakeFiles/cmTC_9affd.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB']
+        ignore line: [Building C object CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdebug-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-bcaRFB -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -x c /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_9affd]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9affd.dir/link.txt --verbose=1]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -o cmTC_9affd ]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o cmTC_9affd -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [14.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_9affd] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_9affd.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_5df7f/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_5df7f.dir/build.make CMakeFiles/cmTC_5df7f.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT'
+        Building CXX object CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -v -Wl,-v -MD -MT CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_5df7f
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5df7f.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  -v -Wl,-v CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5df7f 
+        Apple clang version 15.0.0 (clang-1500.1.0.2.5)
+        Target: arm64-apple-darwin23.2.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o cmTC_5df7f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld  PROJECT:dyld-1022.1
+        BUILD 05:27:37 Dec  7 2023
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.0.12.8)
+        Library search paths:
+        Framework search paths:
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:127 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:159 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        ignore line: [Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_5df7f/fast]
+        ignore line: [/opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_5df7f.dir/build.make CMakeFiles/cmTC_5df7f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT']
+        ignore line: [Building CXX object CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -v -Wl -v -MD -MT CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.2 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 1022.1 -v -fcoverage-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-4QZxfT -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.1.0.2.5) default target arm64-apple-darwin23.2.0]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_5df7f]
+        ignore line: [/opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5df7f.dir/link.txt --verbose=1]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl -search_paths_first -Wl -headerpad_max_install_names  -v -Wl -v CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_5df7f ]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.1.0.2.5)]
+        ignore line: [Target: arm64-apple-darwin23.2.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -o cmTC_5df7f -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [14.2] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_5df7f] ==> ignore
+          arg [-search_paths_first] ==> ignore
+          arg [-headerpad_max_install_names] ==> ignore
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_5df7f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "OpenXLSX/OpenXLSX/CMakeLists.txt:60 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test CHARCONV_RESULT"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-183jox"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-183jox"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "CHARCONV_RESULT"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-183jox'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_080c2/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_080c2.dir/build.make CMakeFiles/cmTC_080c2.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-183jox'
+        Building CXX object CMakeFiles/cmTC_080c2.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DCHARCONV_RESULT  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIE -MD -MT CMakeFiles/cmTC_080c2.dir/src.cxx.o -MF CMakeFiles/cmTC_080c2.dir/src.cxx.o.d -o CMakeFiles/cmTC_080c2.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-183jox/src.cxx
+        Linking CXX executable cmTC_080c2
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_080c2.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_080c2.dir/src.cxx.o -o cmTC_080c2 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-183jox'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:238 (check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "OpenXLSX/OpenXLSX/CMakeLists.txt:170 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_VISIBILITY"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-MaNFit"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-MaNFit"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-MaNFit'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_16da2/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_16da2.dir/build.make CMakeFiles/cmTC_16da2.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-MaNFit'
+        Building CXX object CMakeFiles/cmTC_16da2.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_VISIBILITY  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIE   -fvisibility=hidden -MD -MT CMakeFiles/cmTC_16da2.dir/src.cxx.o -MF CMakeFiles/cmTC_16da2.dir/src.cxx.o.d -o CMakeFiles/cmTC_16da2.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-MaNFit/src.cxx
+        Linking CXX executable cmTC_16da2
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16da2.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_16da2.dir/src.cxx.o -o cmTC_16da2 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-MaNFit'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCompilerFlag.cmake:52 (cmake_check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:239 (check_compiler_flag)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:419 (_test_compiler_hidden_visibility)"
+      - "OpenXLSX/OpenXLSX/CMakeLists.txt:170 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WjA544"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WjA544"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_HIDDEN_INLINE_VISIBILITY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WjA544'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_0b35c/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_0b35c.dir/build.make CMakeFiles/cmTC_0b35c.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WjA544'
+        Building CXX object CMakeFiles/cmTC_0b35c.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIE   -fvisibility-inlines-hidden -MD -MT CMakeFiles/cmTC_0b35c.dir/src.cxx.o -MF CMakeFiles/cmTC_0b35c.dir/src.cxx.o.d -o CMakeFiles/cmTC_0b35c.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WjA544/src.cxx
+        Linking CXX executable cmTC_0b35c
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b35c.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_0b35c.dir/src.cxx.o -o cmTC_0b35c 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WjA544'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckSourceCompiles.cmake:77 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:206 (check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:263 (_check_cxx_compiler_attribute)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/GenerateExportHeader.cmake:420 (_test_compiler_has_deprecated)"
+      - "OpenXLSX/OpenXLSX/CMakeLists.txt:170 (generate_export_header)"
+    checks:
+      - "Performing Test COMPILER_HAS_DEPRECATED_ATTR"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+      CMAKE_POSITION_INDEPENDENT_CODE: "ON"
+    buildResult:
+      variable: "COMPILER_HAS_DEPRECATED_ATTR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_800a3/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_800a3.dir/build.make CMakeFiles/cmTC_800a3.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt'
+        Building CXX object CMakeFiles/cmTC_800a3.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DCOMPILER_HAS_DEPRECATED_ATTR  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -fPIE -MD -MT CMakeFiles/cmTC_800a3.dir/src.cxx.o -MF CMakeFiles/cmTC_800a3.dir/src.cxx.o.d -o CMakeFiles/cmTC_800a3.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt/src.cxx
+        /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt/src.cxx:2:25: warning: 'somefunc' is deprecated [-Wdeprecated-declarations]
+            int main() { return somefunc();}
+                                ^
+        /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt/src.cxx:1:16: note: 'somefunc' has been explicitly marked deprecated here
+        __attribute__((__deprecated__)) int somefunc() { return 0; }
+                       ^
+        1 warning generated.
+        Linking CXX executable cmTC_800a3
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_800a3.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_800a3.dir/src.cxx.o -o cmTC_800a3 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-ZfDbXt'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "OpenXLSX/Examples/external/nowide/CMakeLists.txt:48 (check_cxx_source_compiles)"
+    checks:
+      - "Performing Test NOWIDE_HAS_LFS"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-3mWerS"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-3mWerS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Examples/external/nowide/cmake;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Examples/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "NOWIDE_HAS_LFS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-3mWerS'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_17e1e/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_17e1e.dir/build.make CMakeFiles/cmTC_17e1e.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-3mWerS'
+        Building CXX object CMakeFiles/cmTC_17e1e.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DNOWIDE_HAS_LFS  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_17e1e.dir/src.cxx.o -MF CMakeFiles/cmTC_17e1e.dir/src.cxx.o.d -o CMakeFiles/cmTC_17e1e.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-3mWerS/src.cxx
+        Linking CXX executable cmTC_17e1e
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17e1e.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_17e1e.dir/src.cxx.o -o cmTC_17e1e 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-3mWerS'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:155 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_STD_CXX11"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dPKlpG"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dPKlpG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_STD_CXX11"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dPKlpG'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_10811/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_10811.dir/build.make CMakeFiles/cmTC_10811.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dPKlpG'
+        Building CXX object CMakeFiles/cmTC_10811.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_STD_CXX11  -std=c++11 -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -std=c++11 -MD -MT CMakeFiles/cmTC_10811.dir/src.cxx.o -MF CMakeFiles/cmTC_10811.dir/src.cxx.o.d -o CMakeFiles/cmTC_10811.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dPKlpG/src.cxx
+        Linking CXX executable cmTC_10811
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_10811.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_10811.dir/src.cxx.o -o cmTC_10811 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dPKlpG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:161 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WALL"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-xQbvBT"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-xQbvBT"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WALL"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-xQbvBT'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e1f2e/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e1f2e.dir/build.make CMakeFiles/cmTC_e1f2e.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-xQbvBT'
+        Building CXX object CMakeFiles/cmTC_e1f2e.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WALL  -std=c++11  -Wall -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wall -MD -MT CMakeFiles/cmTC_e1f2e.dir/src.cxx.o -MF CMakeFiles/cmTC_e1f2e.dir/src.cxx.o.d -o CMakeFiles/cmTC_e1f2e.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-xQbvBT/src.cxx
+        Linking CXX executable cmTC_e1f2e
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1f2e.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e1f2e.dir/src.cxx.o -o cmTC_e1f2e 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-xQbvBT'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:162 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WEXTRA"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-38tUGR"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-38tUGR"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WEXTRA"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-38tUGR'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_150a9/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_150a9.dir/build.make CMakeFiles/cmTC_150a9.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-38tUGR'
+        Building CXX object CMakeFiles/cmTC_150a9.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WEXTRA  -std=c++11  -Wall  -Wextra -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wextra -MD -MT CMakeFiles/cmTC_150a9.dir/src.cxx.o -MF CMakeFiles/cmTC_150a9.dir/src.cxx.o.d -o CMakeFiles/cmTC_150a9.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-38tUGR/src.cxx
+        Linking CXX executable cmTC_150a9
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_150a9.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_150a9.dir/src.cxx.o -o cmTC_150a9 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-38tUGR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:163 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHADOW"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-DGaKoi"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-DGaKoi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHADOW"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-DGaKoi'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_f4b88/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_f4b88.dir/build.make CMakeFiles/cmTC_f4b88.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-DGaKoi'
+        Building CXX object CMakeFiles/cmTC_f4b88.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WSHADOW  -std=c++11  -Wall  -Wextra  -Wshadow -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wshadow -MD -MT CMakeFiles/cmTC_f4b88.dir/src.cxx.o -MF CMakeFiles/cmTC_f4b88.dir/src.cxx.o.d -o CMakeFiles/cmTC_f4b88.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-DGaKoi/src.cxx
+        Linking CXX executable cmTC_f4b88
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4b88.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_f4b88.dir/src.cxx.o -o cmTC_f4b88 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-DGaKoi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:164 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WERROR"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-8eA6YI"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-8eA6YI"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WERROR"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-8eA6YI'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_7b1ee/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_7b1ee.dir/build.make CMakeFiles/cmTC_7b1ee.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-8eA6YI'
+        Building CXX object CMakeFiles/cmTC_7b1ee.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WERROR  -std=c++11  -Wall  -Wextra  -Wshadow  -Werror -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Werror -MD -MT CMakeFiles/cmTC_7b1ee.dir/src.cxx.o -MF CMakeFiles/cmTC_7b1ee.dir/src.cxx.o.d -o CMakeFiles/cmTC_7b1ee.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-8eA6YI/src.cxx
+        Linking CXX executable cmTC_7b1ee
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b1ee.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Werror -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7b1ee.dir/src.cxx.o -o cmTC_7b1ee 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-8eA6YI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:169 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-9VbTYi"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-9VbTYi"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSUGGEST_OVERRIDE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-9VbTYi'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_55e02/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_55e02.dir/build.make CMakeFiles/cmTC_55e02.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-9VbTYi'
+        Building CXX object CMakeFiles/cmTC_55e02.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WSUGGEST_OVERRIDE  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wsuggest-override -MD -MT CMakeFiles/cmTC_55e02.dir/src.cxx.o -MF CMakeFiles/cmTC_55e02.dir/src.cxx.o.d -o CMakeFiles/cmTC_55e02.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-9VbTYi/src.cxx
+        Linking CXX executable cmTC_55e02
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55e02.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_55e02.dir/src.cxx.o -o cmTC_55e02 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-9VbTYi'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:171 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-hOuj74"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-hOuj74"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-hOuj74'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_34b8c/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_34b8c.dir/build.make CMakeFiles/cmTC_34b8c.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-hOuj74'
+        Building CXX object CMakeFiles/cmTC_34b8c.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -pedantic -MD -MT CMakeFiles/cmTC_34b8c.dir/src.cxx.o -MF CMakeFiles/cmTC_34b8c.dir/src.cxx.o.d -o CMakeFiles/cmTC_34b8c.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-hOuj74/src.cxx
+        Linking CXX executable cmTC_34b8c
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_34b8c.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_34b8c.dir/src.cxx.o -o cmTC_34b8c 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-hOuj74'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:172 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WKLbrd"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WKLbrd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_PEDANTIC_ERRORS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WKLbrd'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_b4c9e/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_b4c9e.dir/build.make CMakeFiles/cmTC_b4c9e.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WKLbrd'
+        Building CXX object CMakeFiles/cmTC_b4c9e.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_PEDANTIC_ERRORS  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -pedantic-errors -MD -MT CMakeFiles/cmTC_b4c9e.dir/src.cxx.o -MF CMakeFiles/cmTC_b4c9e.dir/src.cxx.o.d -o CMakeFiles/cmTC_b4c9e.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WKLbrd/src.cxx
+        Linking CXX executable cmTC_b4c9e
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b4c9e.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_b4c9e.dir/src.cxx.o -o cmTC_b4c9e 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-WKLbrd'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:173 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-FJT6Dp"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-FJT6Dp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSHORTEN_64_TO_32"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-FJT6Dp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_d28c7/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_d28c7.dir/build.make CMakeFiles/cmTC_d28c7.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-FJT6Dp'
+        Building CXX object CMakeFiles/cmTC_d28c7.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WSHORTEN_64_TO_32  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wshorten-64-to-32 -MD -MT CMakeFiles/cmTC_d28c7.dir/src.cxx.o -MF CMakeFiles/cmTC_d28c7.dir/src.cxx.o.d -o CMakeFiles/cmTC_d28c7.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-FJT6Dp/src.cxx
+        Linking CXX executable cmTC_d28c7
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d28c7.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d28c7.dir/src.cxx.o -o cmTC_d28c7 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-FJT6Dp'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:174 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_FSTRICT_ALIASING"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-A9f59t"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-A9f59t"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_FSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-A9f59t'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e1eb2/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e1eb2.dir/build.make CMakeFiles/cmTC_e1eb2.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-A9f59t'
+        Building CXX object CMakeFiles/cmTC_e1eb2.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_FSTRICT_ALIASING  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -fstrict-aliasing -MD -MT CMakeFiles/cmTC_e1eb2.dir/src.cxx.o -MF CMakeFiles/cmTC_e1eb2.dir/src.cxx.o.d -o CMakeFiles/cmTC_e1eb2.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-A9f59t/src.cxx
+        Linking CXX executable cmTC_e1eb2
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1eb2.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e1eb2.dir/src.cxx.o -o cmTC_e1eb2 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-A9f59t'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:177 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-sWfXUx"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-sWfXUx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-sWfXUx'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_6397a/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_6397a.dir/build.make CMakeFiles/cmTC_6397a.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-sWfXUx'
+        Building CXX object CMakeFiles/cmTC_6397a.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED_DECLARATIONS  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wno-deprecated-declarations -MD -MT CMakeFiles/cmTC_6397a.dir/src.cxx.o -MF CMakeFiles/cmTC_6397a.dir/src.cxx.o.d -o CMakeFiles/cmTC_6397a.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-sWfXUx/src.cxx
+        Linking CXX executable cmTC_6397a
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6397a.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6397a.dir/src.cxx.o -o cmTC_6397a 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-sWfXUx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:185 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WNO_DEPRECATED"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-XNbDrG"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-XNbDrG"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WNO_DEPRECATED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-XNbDrG'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_a275d/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_a275d.dir/build.make CMakeFiles/cmTC_a275d.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-XNbDrG'
+        Building CXX object CMakeFiles/cmTC_a275d.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WNO_DEPRECATED  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wno-deprecated -MD -MT CMakeFiles/cmTC_a275d.dir/src.cxx.o -MF CMakeFiles/cmTC_a275d.dir/src.cxx.o.d -o CMakeFiles/cmTC_a275d.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-XNbDrG/src.cxx
+        Linking CXX executable cmTC_a275d
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a275d.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wno-deprecated -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_a275d.dir/src.cxx.o -o cmTC_a275d 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-XNbDrG'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:194 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WSTRICT_ALIASING"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-5uL7qx"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-5uL7qx"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WSTRICT_ALIASING"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-5uL7qx'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_47582/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_47582.dir/build.make CMakeFiles/cmTC_47582.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-5uL7qx'
+        Building CXX object CMakeFiles/cmTC_47582.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WSTRICT_ALIASING  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wstrict-aliasing -MD -MT CMakeFiles/cmTC_47582.dir/src.cxx.o -MF CMakeFiles/cmTC_47582.dir/src.cxx.o.d -o CMakeFiles/cmTC_47582.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-5uL7qx/src.cxx
+        Linking CXX executable cmTC_47582
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47582.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_47582.dir/src.cxx.o -o cmTC_47582 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-5uL7qx'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:199 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WD654"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-HUsDnn"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-HUsDnn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WD654"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-HUsDnn'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_2a035/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_2a035.dir/build.make CMakeFiles/cmTC_2a035.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-HUsDnn'
+        Building CXX object CMakeFiles/cmTC_2a035.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WD654  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -wd654 -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -wd654 -MD -MT CMakeFiles/cmTC_2a035.dir/src.cxx.o -MF CMakeFiles/cmTC_2a035.dir/src.cxx.o.d -o CMakeFiles/cmTC_2a035.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-HUsDnn/src.cxx
+        clang: error: unknown argument: '-wd654'
+        clang: error: unknown argument: '-wd654'
+        gmake[1]: *** [CMakeFiles/cmTC_2a035.dir/build.make:79: CMakeFiles/cmTC_2a035.dir/src.cxx.o] Error 1
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-HUsDnn'
+        gmake: *** [Makefile:127: cmTC_2a035/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:200 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_WTHREAD_SAFETY"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dMN6f5"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dMN6f5"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_WTHREAD_SAFETY"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dMN6f5'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_cb935/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_cb935.dir/build.make CMakeFiles/cmTC_cb935.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dMN6f5'
+        Building CXX object CMakeFiles/cmTC_cb935.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_WTHREAD_SAFETY  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   -Wthread-safety -MD -MT CMakeFiles/cmTC_cb935.dir/src.cxx.o -MF CMakeFiles/cmTC_cb935.dir/src.cxx.o.d -o CMakeFiles/cmTC_cb935.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dMN6f5/src.cxx
+        Linking CXX executable cmTC_cb935
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb935.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_cb935.dir/src.cxx.o -o cmTC_cb935 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-dMN6f5'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "OpenXLSX/Benchmarks/gbench/cmake/CXXFeatureCheck.cmake:51 (try_run)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:202 (cxx_feature_check)"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "COMPILE_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_61364/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_61364.dir/build.make CMakeFiles/cmTC_61364.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_61364.dir/thread_safety_attributes.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_61364.dir/thread_safety_attributes.cpp.o -MF CMakeFiles/cmTC_61364.dir/thread_safety_attributes.cpp.o.d -o CMakeFiles/cmTC_61364.dir/thread_safety_attributes.cpp.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/thread_safety_attributes.cpp
+        In file included from /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/thread_safety_attributes.cpp:2:
+        In file included from /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/../src/mutex.h:7:
+        In file included from /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/../src/check.h:8:
+        /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/../src/internal_macros.h:4:10: fatal error: 'benchmark/benchmark.h' file not found
+        #include "benchmark/benchmark.h"
+                 ^~~~~~~~~~~~~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_61364.dir/build.make:79: CMakeFiles/cmTC_61364.dir/thread_safety_attributes.cpp.o] Error 1
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_61364/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_THREAD_SAFETY_ATTRIBUTES"
+      cached: true
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake:34 (cmake_check_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/cmake/AddCXXCompilerFlag.cmake:34 (check_cxx_compiler_flag)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:251 (add_cxx_compiler_flag)"
+    checks:
+      - "Performing Test HAVE_CXX_FLAG_COVERAGE"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-gI8NLS"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-gI8NLS"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "HAVE_CXX_FLAG_COVERAGE"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-gI8NLS'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_6ed7c/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_6ed7c.dir/build.make CMakeFiles/cmTC_6ed7c.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-gI8NLS'
+        Building CXX object CMakeFiles/cmTC_6ed7c.dir/src.cxx.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DHAVE_CXX_FLAG_COVERAGE  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  --coverage -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk   --coverage -MD -MT CMakeFiles/cmTC_6ed7c.dir/src.cxx.o -MF CMakeFiles/cmTC_6ed7c.dir/src.cxx.o.d -o CMakeFiles/cmTC_6ed7c.dir/src.cxx.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-gI8NLS/src.cxx
+        Linking CXX executable cmTC_6ed7c
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6ed7c.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  --coverage -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_6ed7c.dir/src.cxx.o -o cmTC_6ed7c 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-gI8NLS'
+        
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "OpenXLSX/Benchmarks/gbench/cmake/CXXFeatureCheck.cmake:51 (try_run)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:280 (cxx_feature_check)"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "COMPILE_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_7bd4f/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_7bd4f.dir/build.make CMakeFiles/cmTC_7bd4f.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_7bd4f.dir/std_regex.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_7bd4f.dir/std_regex.cpp.o -MF CMakeFiles/cmTC_7bd4f.dir/std_regex.cpp.o.d -o CMakeFiles/cmTC_7bd4f.dir/std_regex.cpp.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/std_regex.cpp
+        Linking CXX executable cmTC_7bd4f
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7bd4f.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_7bd4f.dir/std_regex.cpp.o -o cmTC_7bd4f 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STD_REGEX"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "OpenXLSX/Benchmarks/gbench/cmake/CXXFeatureCheck.cmake:51 (try_run)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:281 (cxx_feature_check)"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "COMPILE_HAVE_GNU_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_468fe/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_468fe.dir/build.make CMakeFiles/cmTC_468fe.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_468fe.dir/gnu_posix_regex.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_468fe.dir/gnu_posix_regex.cpp.o -MF CMakeFiles/cmTC_468fe.dir/gnu_posix_regex.cpp.o.d -o CMakeFiles/cmTC_468fe.dir/gnu_posix_regex.cpp.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/gnu_posix_regex.cpp
+        /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/gnu_posix_regex.cpp:1:10: fatal error: 'gnuregex.h' file not found
+        #include <gnuregex.h>
+                 ^~~~~~~~~~~~
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_468fe.dir/build.make:79: CMakeFiles/cmTC_468fe.dir/gnu_posix_regex.cpp.o] Error 1
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_468fe/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "RUN_HAVE_GNU_POSIX_REGEX"
+      cached: true
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "OpenXLSX/Benchmarks/gbench/cmake/CXXFeatureCheck.cmake:51 (try_run)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:282 (cxx_feature_check)"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "COMPILE_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_d34ee/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_d34ee.dir/build.make CMakeFiles/cmTC_d34ee.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_d34ee.dir/posix_regex.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_d34ee.dir/posix_regex.cpp.o -MF CMakeFiles/cmTC_d34ee.dir/posix_regex.cpp.o.d -o CMakeFiles/cmTC_d34ee.dir/posix_regex.cpp.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/posix_regex.cpp
+        Linking CXX executable cmTC_d34ee
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d34ee.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_d34ee.dir/posix_regex.cpp.o -o cmTC_d34ee 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_POSIX_REGEX"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "OpenXLSX/Benchmarks/gbench/cmake/CXXFeatureCheck.cmake:51 (try_run)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:291 (cxx_feature_check)"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "  -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety"
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "COMPILE_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_e8d86/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_e8d86.dir/build.make CMakeFiles/cmTC_e8d86.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        Building CXX object CMakeFiles/cmTC_e8d86.dir/steady_clock.cpp.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -std=c++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_e8d86.dir/steady_clock.cpp.o -MF CMakeFiles/cmTC_e8d86.dir/steady_clock.cpp.o.d -o CMakeFiles/cmTC_e8d86.dir/steady_clock.cpp.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/steady_clock.cpp
+        Linking CXX executable cmTC_e8d86
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8d86.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -std=c++11  -Wall  -Wextra  -Wshadow  -Wsuggest-override  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -fstrict-aliasing  -Wno-deprecated-declarations  -Wstrict-aliasing  -Wthread-safety  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_e8d86.dir/steady_clock.cpp.o -o cmTC_e8d86 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeTmp'
+        
+      exitCode: 0
+    runResult:
+      variable: "RUN_HAVE_STEADY_CLOCK"
+      cached: true
+      stdout: |
+      stderr: |
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/CheckCSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/opt/homebrew/Cellar/cmake/3.28.3/share/cmake/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "OpenXLSX/Benchmarks/gbench/CMakeLists.txt:294 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-CzVu7d"
+      binary: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-CzVu7d"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake/Modules;/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/OpenXLSX/Benchmarks/gbench/cmake"
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-CzVu7d'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E env VERBOSE=1 /opt/homebrew/bin/gmake -f Makefile cmTC_ff9c3/fast
+        /opt/homebrew/bin/gmake  -f CMakeFiles/cmTC_ff9c3.dir/build.make CMakeFiles/cmTC_ff9c3.dir/build
+        gmake[1]: Entering directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-CzVu7d'
+        Building C object CMakeFiles/cmTC_ff9c3.dir/src.c.o
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -MD -MT CMakeFiles/cmTC_ff9c3.dir/src.c.o -MF CMakeFiles/cmTC_ff9c3.dir/src.c.o.d -o CMakeFiles/cmTC_ff9c3.dir/src.c.o -c /Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-CzVu7d/src.c
+        Linking C executable cmTC_ff9c3
+        /opt/homebrew/Cellar/cmake/3.28.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff9c3.dir/link.txt --verbose=1
+        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/cmTC_ff9c3.dir/src.c.o -o cmTC_ff9c3 
+        gmake[1]: Leaving directory '/Users/luisced/Code/School/UP/OS/Planification_Algorithms/rr/CMakeFiles/CMakeScratch/TryCompile-CzVu7d'
+        
+      exitCode: 0
+...
