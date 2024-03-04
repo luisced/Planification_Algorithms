@@ -40,7 +40,8 @@ EOF
         ;;
       "2")
         # Suponiendo que el script de Python para SJF se llama python_sjf.py
-        python3 python_sjf.py
+        cd sjf
+        python3 main.py
         ;;
       "3")
         # Suponiendo que el ejecutable de C++ para Round Robin se llama cpp_rr
