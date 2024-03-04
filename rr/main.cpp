@@ -20,7 +20,7 @@ struct Proceso
 };
 
 // Función para implementar el algoritmo Round Robin
-void roundRobin(std::vector<Proceso>& procesos, int quantum)
+std::vector<Proceso> roundRobin(std::vector<Proceso>& procesos, int quantum)
 {
     std::queue<Proceso*> colaListos; // Cola para almacenar los procesos listos
     int tiempoActual = 0;              // Tiempo actual en la ejecución
@@ -75,6 +75,8 @@ void roundRobin(std::vector<Proceso>& procesos, int quantum)
             tiempoActual++; // Incrementar el tiempo actual si no hay procesos listos
         }
     }
+
+    return procesos; // Devolver el vector de procesos actualizado
 }
 
 // Función para mostrar las estadísticas de los procesos
@@ -89,8 +91,8 @@ void mostrarEstadisticas(const std::vector<Proceso>& procesos)
     for (const auto& p : procesos)
     {
         std::cout << p.nombre << "\t\t" << p.tiempoRafaga << "\t\t" << p.tiempoLlegada << "\t\t" << p.tiempoEspera << "\t\t" << p.tiempoRetorno << "\t\t" << p.ordenTerminacion << "\n";
-        tiempoEsperaTotal += p.tiempoEspera;
-        tiempoRetornoTotal += p.tiempoRetorno;
+        tiempoEsperaTotal += p.tiempoEspera; // Sumar el tiempo de espera al total
+        tiempoRetornoTotal += p.tiempoRetorno; // Sumar el tiempo de retorno al total
     }
 
     // Mostrar el tiempo de espera y el tiempo de retorno promedio
@@ -138,7 +140,7 @@ int main()
 {
     const char* ruta = "../Planification Algorithms.xlsx"; // Ruta del archivo de Excel
     std::vector<Proceso> procesos = leerExcel(ruta); // Leer los datos de los procesos
-    roundRobin(procesos, procesos[0].quantum); // Ejecutar el algoritmo Round Robin
+    procesos = roundRobin(procesos, procesos[0].quantum); // Ejecutar el algoritmo Round Robin
     mostrarEstadisticas(procesos); // Mostrar las estadísticas de los procesos
 
     return 0; // Indicar que el programa terminó correctamente
