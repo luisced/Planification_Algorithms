@@ -3,110 +3,105 @@
 #include <queue>
 #include <string>
 #include <OpenXLSX.hpp>
+#include <iomanip>
 using namespace std;
 using namespace OpenXLSX;
 
 // Estructura para representar los atributos de un proceso
 struct Proceso
 {
-    std::string nombre;        // Nombre del proceso
-    int tiempoRafaga;          // Tiempo de ráfaga (tiempo de ejecución)
-    int tiempoLlegada;         // Tiempo de llegada del proceso
-    int tiempoRestante;        // Tiempo restante para completar la ejecución
-    int tiempoEspera;          // Tiempo de espera del proceso
-    int tiempoRetorno;         // Tiempo de retorno del proceso
-    int quantum;               // Quantum asignado para el algoritmo Round Robin
-    int ordenTerminacion;      // Orden de terminación del proceso
+    std::string nombre;    // Nombre del proceso
+    int tiempoRafaga;      // Tiempo de ráfaga (tiempo de ejecución)
+    int tiempoLlegada;     // Tiempo de llegada del proceso
+    int tiempoRestante;    // Tiempo restante para completar la ejecución
+    int tiempoEspera = 0;  // Tiempo de espera del proceso
+    int tiempoRetorno = 0; // Tiempo de retorno del proceso
+    int quantum;           // Quantum asignado para el algoritmo Round Robin
+    int ordenTerminacion;  // Orden de terminación del proceso
 };
 
 // Función para implementar el algoritmo Round Robin
-std::vector<Proceso> roundRobin(std::vector<Proceso>& procesos, int quantum)
+void roundRobin(vector<Proceso> &procesos)
 {
-    std::queue<Proceso*> colaListos; // Cola para almacenar los procesos listos
-    int tiempoActual = 0;              // Tiempo actual en la ejecución
-    int procesosCompletados = 0;       // Contador de procesos completados
-    int tiempoCambioContexto = 1;      // Tiempo de cambio de contexto
-    int orden = 1;                     // Orden de terminación de los procesos
+    queue<Proceso *> colaListos;
+    int tiempoActual = 0;
+    Proceso *procesoActual;
 
-    // Bucle mientras no se hayan completado todos los procesos
-    while (procesosCompletados < procesos.size())
+    // Asumimos que los procesos están ordenados por tiempo de llegada
+    auto procesoIt = procesos.begin();
+
+    // Procesamiento de los procesos
+    while (procesoIt != procesos.end() || !colaListos.empty())
     {
-        // Añadir procesos a la cola de listos según su tiempo de llegada
-        for (auto& p : procesos)
+        // Encolar procesos que han llegado
+        while (procesoIt != procesos.end() && procesoIt->tiempoLlegada <= tiempoActual)
         {
-            if (p.tiempoLlegada == tiempoActual)
-            {
-                colaListos.push(&p);
-            }
+            colaListos.push(&(*procesoIt));
+            ++procesoIt;
         }
 
-        // Si hay procesos listos para ejecución
+        // Si hay procesos en la cola, procesar el siguiente
         if (!colaListos.empty())
         {
-            Proceso* procesoActual = colaListos.front(); // Obtener el primer proceso de la cola
-            colaListos.pop(); // Sacar el proceso de la cola
+            procesoActual = colaListos.front();
+            colaListos.pop();
 
-            // Calcular el tiempo de ejecución para esta ráfaga
-            int rebanadaTiempo = std::min(procesoActual->tiempoRestante, quantum);
-            tiempoActual += rebanadaTiempo; // Actualizar el tiempo actual
-            procesoActual->tiempoRestante -= rebanadaTiempo; // Actualizar el tiempo restante del proceso
+            // Calcular tiempo de ejecución para esta ráfaga
+            int ejecucion = min(procesoActual->tiempoRestante, procesoActual->quantum);
+            tiempoActual += ejecucion;
+            procesoActual->tiempoRestante -= ejecucion;
 
-            // Si el proceso ha completado su ejecución
+            // Si el proceso terminó, calcular sus tiempos de espera y retorno
             if (procesoActual->tiempoRestante == 0)
             {
-                procesoActual->tiempoRetorno = tiempoActual - procesoActual->tiempoLlegada; // Calcular el tiempo de retorno
-                procesoActual->tiempoEspera = procesoActual->tiempoRetorno - procesoActual->tiempoRafaga; // Calcular el tiempo de espera
-                procesoActual->ordenTerminacion = orden++; // Asignar el orden de terminación
-                procesosCompletados++; // Incrementar el contador de procesos completados
+                procesoActual->tiempoRetorno = tiempoActual - procesoActual->tiempoLlegada;
+                procesoActual->tiempoEspera = procesoActual->tiempoRetorno - procesoActual->tiempoRafaga;
             }
             else
             {
-                colaListos.push(procesoActual); // Volver a añadir el proceso a la cola si no se ha completado
-            }
-
-            // Simular el cambio de contexto si hay más procesos en la cola
-            if (!colaListos.empty())
-            {
-                tiempoActual += tiempoCambioContexto;
+                // Si no terminó, volver a encolarlo
+                colaListos.push(procesoActual);
             }
         }
         else
         {
-            tiempoActual++; // Incrementar el tiempo actual si no hay procesos listos
+            // Si no hay procesos listos, avanzar el tiempo
+            tiempoActual++;
         }
     }
-
-    return procesos; // Devolver el vector de procesos actualizado
 }
 
 // Función para mostrar las estadísticas de los procesos
-void mostrarEstadisticas(const std::vector<Proceso>& procesos)
+void imprimirResultados(const vector<Proceso> &procesos)
 {
-    double tiempoEsperaTotal = 0; // Acumulador para el tiempo total de espera
-    double tiempoRetornoTotal = 0; // Acumulador para el tiempo total de retorno
+    // Imprimir encabezados de la tabla
+    cout << left << setw(15) << "Proceso"
+         << setw(15) << "T. Llegada"
+         << setw(15) << "T. Rafaga"
+         << setw(15) << "T. Espera"
+         << setw(15) << "T. Retorno"
+         << setw(15) << "Quantum" << endl;
 
-    // Mostrar encabezados de las columnas
-    std::cout << "\nNombre Proceso\tTiempo Ráfaga\tTiempo Llegada\tTiempo Espera\tTiempo Retorno\tOrden Terminación\n";
-    // Iterar sobre los procesos y mostrar sus estadísticas
-    for (const auto& p : procesos)
+    cout << string(90, '-') << endl; // Línea divisoria
+
+    // Imprimir filas de la tabla
+    for (const auto &p : procesos)
     {
-        std::cout << p.nombre << "\t\t" << p.tiempoRafaga << "\t\t" << p.tiempoLlegada << "\t\t" << p.tiempoEspera << "\t\t" << p.tiempoRetorno << "\t\t" << p.ordenTerminacion << "\n";
-        tiempoEsperaTotal += p.tiempoEspera; // Sumar el tiempo de espera al total
-        tiempoRetornoTotal += p.tiempoRetorno; // Sumar el tiempo de retorno al total
+        cout << left << setw(15) << p.nombre
+             << setw(15) << p.tiempoLlegada
+             << setw(15) << p.tiempoRafaga
+             << setw(15) << p.tiempoEspera
+             << setw(15) << p.tiempoRetorno
+             << setw(15) << p.quantum << endl;
     }
-
-    // Mostrar el tiempo de espera y el tiempo de retorno promedio
-    std::cout << "\nTiempo Espera Promedio: " << tiempoEsperaTotal / procesos.size();
-    std::cout << "\nTiempo Retorno Promedio: " << tiempoRetornoTotal / procesos.size() << "\n";
 }
-
 // Función para leer los datos de los procesos desde un archivo de Excel
-vector<Proceso> leerExcel(const string& ruta)
+vector<Proceso> leerExcel(const string &ruta)
 {
     vector<Proceso> procesos; // Vector para almacenar los procesos
 
-    XLDocument doc; // Crear un objeto para manejar el archivo de Excel
-    doc.open(ruta); // Abrir el archivo de Excel
+    XLDocument doc;                                       // Crear un objeto para manejar el archivo de Excel
+    doc.open(ruta);                                       // Abrir el archivo de Excel
     auto hojaTrabajo = doc.workbook().worksheet("Hoja1"); // Seleccionar la hoja de trabajo
 
     int fila = 2; // Iniciar en la segunda fila, asumiendo que la primera fila contiene encabezados
@@ -116,32 +111,32 @@ vector<Proceso> leerExcel(const string& ruta)
     {
         while (hojaTrabajo.cell(XLCellReference("A" + to_string(fila))).value().type() != OpenXLSX::XLValueType::Empty)
         {
-            Proceso proceso; // Crear un objeto Proceso
+            Proceso proceso;                                                                                      // Crear un objeto Proceso
             proceso.nombre = hojaTrabajo.cell(XLCellReference("A" + to_string(fila))).value().get<std::string>(); // Leer el nombre del proceso
-            proceso.tiempoLlegada = hojaTrabajo.cell(XLCellReference("B" + to_string(fila))).value().get<int>(); // Leer el tiempo de llegada
-            proceso.tiempoRafaga = hojaTrabajo.cell(XLCellReference("C" + to_string(fila))).value().get<int>(); // Leer el tiempo de ráfaga
-            proceso.quantum = hojaTrabajo.cell(XLCellReference("D2")).value().get<int>(); // Leer el quantum (asumiendo que es el mismo para todos los procesos)
-            proceso.tiempoRestante = proceso.tiempoRafaga; // Inicializar el tiempo restante
+            proceso.tiempoLlegada = hojaTrabajo.cell(XLCellReference("B" + to_string(fila))).value().get<int>();  // Leer el tiempo de llegada
+            proceso.tiempoRafaga = hojaTrabajo.cell(XLCellReference("C" + to_string(fila))).value().get<int>();   // Leer el tiempo de ráfaga
+            proceso.quantum = hojaTrabajo.cell(XLCellReference("D2")).value().get<int>();                         // Leer el quantum (asumiendo que es el mismo para todos los procesos)
+            proceso.tiempoRestante = proceso.tiempoRafaga;                                                        // Inicializar el tiempo restante
 
             procesos.push_back(proceso); // Añadir el proceso al vector
-            ++fila; // Pasar a la siguiente fila
+            ++fila;                      // Pasar a la siguiente fila
         }
     }
-    catch (const OpenXLSX::XLValueTypeError& e) // Capturar cualquier error al leer los datos
+    catch (const OpenXLSX::XLValueTypeError &e) // Capturar cualquier error al leer los datos
     {
         cerr << "Error: " << e.what() << endl;
     }
 
-    doc.close(); // Cerrar el archivo de Excel
+    doc.close();     // Cerrar el archivo de Excel
     return procesos; // Devolver el vector de procesos
 }
 
 int main()
 {
-    const char* ruta = "../Planification Algorithms.xlsx"; // Ruta del archivo de Excel
-    std::vector<Proceso> procesos = leerExcel(ruta); // Leer los datos de los procesos
-    procesos = roundRobin(procesos, procesos[0].quantum); // Ejecutar el algoritmo Round Robin
-    mostrarEstadisticas(procesos); // Mostrar las estadísticas de los procesos
+    const char *ruta = "../Planification Algorithms.xlsx"; // Ruta del archivo de Excel
+    std::vector<Proceso> procesos = leerExcel(ruta);
+    roundRobin(procesos);
+    imprimirResultados(procesos); // Mostrar las estadísticas de los procesos
 
     return 0; // Indicar que el programa terminó correctamente
 }

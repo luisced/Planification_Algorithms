@@ -46,7 +46,9 @@ EOF
         ;;
       "3")
         # Suponiendo que el ejecutable de C++ para Round Robin se llama cpp_rr
-        ./cpp_rr
+        cd rr
+        ./rr
+        cd ..
         ;;
       "4")
         echo "Saliendo del programa."
