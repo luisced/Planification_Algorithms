@@ -2,17 +2,41 @@
 
 while true; do
     clear
-    echo "Seleccione el algoritmo de planificación que desea simular:"
-    echo "1. FCFS (Rust)"
-    echo "2. SJF (Python)"
-    echo "3. Round Robin (C++)"
-    echo "4. Salir"
-    read -p "Ingrese su elección (1/2/3/4): " ALGORITMO
+    cat << "EOF"
+
+           _                  _ _                           
+     /\   | |                (_) |                          
+    /  \  | | __ _  ___  _ __ _| |_ _ __ ___   ___  ___     
+   / /\ \ | |/ _` |/ _ \| '__| | __| '_ ` _ \ / _ \/ __|    
+  / ____ \| | (_| | (_) | |  | | |_| | | | | | (_) \__ \    
+ /_/    \_\_|\__, |\___/|_|  |_|\__|_| |_| |_|\___/|___/    
+ |  __ \      __/ |                                         
+ | |  | | ___|___/                                          
+ | |  | |/ _ \                                              
+ | |__| |  __/                                              
+ |_____/ \___|         _  __ _                _             
+ |  __ \| |           (_)/ _(_)              (_)            
+ | |__) | | __ _ _ __  _| |_ _  ___ __ _  ___ _  ___  _ __  
+ |  ___/| |/ _` | '_ \| |  _| |/ __/ _` |/ __| |/ _ \| '_ \ 
+ | |    | | (_| | | | | | | | | (_| (_| | (__| | (_) | | | |
+ |_|    |_|\__,_|_| |_|_|_| |_|\___\__,_|\___|_|\___/|_| |_|
+
++----+-------------+----------------------+
+| #  |  Algorithm  | Programming Language |
++----+-------------+----------------------+
+| 1º | FCSF        | Rust                 |
+| 2º | SJF         | Python               |
+| 3º | Round Robin | C++                  |
++----+-------------+----------------------+
+
+EOF
+
+    read -p "Seleccione el algoritmo de planificación que desea simular (1-3) o '4' para salir: " ALGORITMO
 
     case "$ALGORITMO" in
       "1")
         # Suponiendo que el ejecutable de Rust se llama rust_fcfs
-        (cd fcsf/src && cargo run) # Usamos subshell para no cambiar el directorio del shell actual
+        (cd fcsf/src && cargo run)
         ;;
       "2")
         # Suponiendo que el script de Python para SJF se llama python_sjf.py
@@ -27,9 +51,8 @@ while true; do
         exit 0
         ;;
       *)
-        echo "Selección de algoritmo no válida."
+        echo "Selección de algoritmo no válida. Intente de nuevo."
         ;;
     esac
-    read -p "Presione Enter para continuar..." # Pausa antes de limpiar la pantalla
-    clear
+    read -p "Presione Enter para continuar..."
 done
