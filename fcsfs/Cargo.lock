@@ -73,6 +73,7 @@ name = "fcfs"
 version = "0.1.0"
 dependencies = [
  "calamine",
+ "serde",
 ]
 
 [[package]]
